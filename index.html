@@ -7,76 +7,79 @@
         <link rel="shortcut icon" href="public/ico/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="src/index.css">
-        <title>PHIL ARTS - 12STEMB1</title>
+        <link rel="stylesheet" href="src/main.css">
+        <title>12STEMB1 Online Exhibit</title>
         <meta charset="UTF-8">
 
     </head>
-
     <body>
-    
-        <header>
 
-            <div class="heading">
+        <header class="header">
 
-                <img src="/public/img/B1_LOGO.svg" alt="12STEMB1 Website Logo">
+            <h1 class="header-logo">12STEMB1</h1>
 
-                <div class="heading-text">
+             <nav class="header-nav">
 
-                    <h1>Online Exhibit (12STEMB1)</h1>
-                    <h2>Technological Institute of the Philippines, Quezon City</h2>
+                <a href="#NAV_HERO">Home</a>
+                <a href="#NAV_EXHIBIT">Gallery</a>
 
                 </div>
 
-            </div>
-
-            <nav>
-
-                <div class="nav-home">
-
-                    <a href="javascript:void(0);" class="nav-home-link">
-                        Home
-                    </a>
-
-                </div>
-
-                <div class="nav-portfolio">
-
-                    <a href="javascript:void(0);" class="nav-portfolio-link">
-                        Portfolio
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <!-- <div class="nav-portfolio-dropdown"></div> -->
-
-                </div>
-
-                <div class="nav-contributors">
-
-                    <a href="javascript:void(0);" class="nav-contributors-link">
-                        Contributors
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <!-- <div class="nav-portfolio-dropdown"></div> -->
-
-                </div>
-
-                <i class="nav-theme fa-regular fa-sun"></i>
-
-            </nav>
+             </nav>
 
         </header>
 
-        <section class="hero">
+        <section class="hero" id="NAV_HERO">
 
+            <div class="hero-information">
 
+                <h2 class="hero-information-heading">PHILARTS Online Exhibit</h2>
+                <h3 class="hero-information-subheading">made by 12STEMB1</h3>
+                <button class="hero-information-cta">Explore our exhibit</button>    
+
+            </div>
+
+            <div class="hero-footer">
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </div>
 
         </section>
 
-        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="./src/js/helpers.js"></script>
-        <script src="./src/js/header_component.js"></script>
+        <section class="exhibit" id="NAV_EXHIBIT">
+
+            <section class="exhibit-photography">
+
+            </section>
+
+            <section class="exhibit-videography">
+
+            </section>
+
+            <section class="exhibit-sketching">
+
+            </section>
+
+            <section class="exhibit-drawing">
+
+            </section>
+
+            <section class="exhibit-painting">
+
+            </section>
+
+            <section class="exhibit-digitalArts">
+
+            </section>
+
+        </section>
+
+        <footer class="footer">
+
+
+
+        </footer>
 
     </body>
 

@@ -1,0 +1,58 @@
+.hero {
+
+    background-image: url(/public/assets/webp/hero_d_resp.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-information {
+
+        &-heading {
+
+            @include headingStyles();
+
+        }
+
+        &-subheading {
+
+            @include bodyStyles($tpg-body, $tpg-openSans);
+            color: $tpg-secondary;
+
+        }
+
+        &-cta {
+
+            margin-top: 16px;
+            @include btnStyles();
+
+            &:hover {
+
+                background-color: $tpg-primary;
+                cursor: pointer;
+                color: $msc-accent;
+
+            }
+
+        }
+
+    }
+
+    &-footer {
+
+        i {
+
+            transition: 0.2s ease;
+            font-size: clamp(24px, 1vw, 40px);
+
+            &:hover {
+
+                cursor: pointer;
+                color: $msc-accent;
+
+            }
+
+        }
+
+    }
+
+}

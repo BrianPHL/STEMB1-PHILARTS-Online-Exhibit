@@ -1,0 +1,28 @@
+.hero {
+
+    background-color: green;
+    grid-template-columns: 12vw 1fr 12vw;
+    grid-column: 1/4;
+    grid-row: 1;
+    display: grid;
+
+    &-information {
+
+        grid-column: 2;
+        align-self: center;
+        grid-row: 1;
+
+    }
+
+    &-footer {
+
+        grid-column: 2;
+        place-items: center;
+        align-self: flex-end;
+        grid-row: 1;
+        display: grid;
+        height: 72px;
+
+    }
+
+}

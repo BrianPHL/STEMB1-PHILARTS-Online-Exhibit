@@ -1,0 +1,29 @@
+.header {
+
+    &-logo {
+
+        @include headingStyles(
+            clamp(16px, 1.5vw, 64px),
+            $tpg-sourceSansPro
+        );
+
+    }
+
+    &-nav {
+
+        & > a {
+
+            @include anchorStyles();
+            transition: 0.2s ease;
+
+            &:hover {
+
+                color: $msc-accent;
+
+            }
+
+        }
+
+    }
+
+}

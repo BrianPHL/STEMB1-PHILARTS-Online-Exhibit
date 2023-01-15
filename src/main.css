@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("/public/assets/icons/all.min.css");
+* {
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E9E9E9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  grid-template-columns: 12vw 1fr 12vw;
+  grid-template-rows: 100vh 100vh;
+  display: grid;
+}
+
+.header {
+  grid-template-columns: 12vw 1fr 1fr 12vw;
+  grid-column: 1/4;
+  grid-row: 1;
+  position: sticky;
+  display: grid;
+  height: clamp(72px, 3vw, 108px);
+  top: 0;
+}
+.header-logo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  grid-column: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  grid-column: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: clamp(16px, 1vw, 32px);
+}
+
+.hero {
+  background-color: green;
+  grid-template-columns: 12vw 1fr 12vw;
+  grid-column: 1/4;
+  grid-row: 1;
+  display: grid;
+}
+.hero-information {
+  grid-column: 2;
+  align-self: center;
+  grid-row: 1;
+}
+.hero-footer {
+  grid-column: 2;
+  place-items: center;
+  align-self: flex-end;
+  grid-row: 1;
+  display: grid;
+  height: 72px;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: clamp(16px, 1.5vw, 64px);
+}
+.header-nav > a {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(16px, 1vw, 32px);
+  color: #202020;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.header-nav > a:hover {
+  color: #E9204F;
+}
+
+.hero {
+  background-image: url(/public/assets/webp/hero_d_resp.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-information-heading {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(28px, 3.5vw, 86px);
+}
+.hero-information-subheading {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(20px, 2vw, 72px);
+  color: #494949;
+}
+.hero-information-cta {
+  margin-top: 16px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: clamp(12px, 1vw, 16px);
+  outline: none;
+  padding: clamp(8px, 1vw, 16px) clamp(16px, 2vw, 32px);
+  border: 1px solid #202020;
+}
+.hero-information-cta:hover {
+  background-color: #202020;
+  cursor: pointer;
+  color: #E9204F;
+}
+.hero-footer i {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: clamp(24px, 1vw, 40px);
+}
+.hero-footer i:hover {
+  cursor: pointer;
+  color: #E9204F;
+}

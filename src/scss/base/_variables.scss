@@ -1,0 +1,25 @@
+// Typography
+$tpg-sourceSansPro: 'Source Sans Pro', sans-serif;
+$tpg-openSans: 'Open Sans', sans-serif;
+
+// Typography Sizes
+// $tpg-h1: 86px;
+$tpg-h1: clamp(28px, 3.5vw, 86px);
+$tpg-h2: clamp(24px, 3vw, 80px);
+$tpg-body: clamp(20px, 2vw, 72px);
+$tpg-anchor: clamp(16px, 1vw, 32px);
+$tpg-btnText: clamp(12px, 1vw, 16px);
+$tpg-btnPadding: clamp(8px, 1vw, 16px) clamp(16px, 2vw, 32px);
+
+// Typography Colors
+$tpg-primary: #202020;
+$tpg-secondary: #494949;
+$tpg-tertiary: #727272;
+
+// Background Colors
+$bgd-primary: #E9E9E9;
+$bgd-secondary: #C1C1C1;
+$bgd-tertiary: #959595;
+
+// Miscellaneous Colors
+$msc-accent: #E9204F;

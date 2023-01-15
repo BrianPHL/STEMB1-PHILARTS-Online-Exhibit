@@ -1,0 +1,30 @@
+.header {
+
+    grid-template-columns: 12vw 1fr 1fr 12vw;
+    grid-column: 1/4;
+    grid-row: 1;
+    position: sticky;
+    display: grid;
+    height: clamp(72px, 3vw, 108px);
+    top: 0;
+
+    &-logo {
+
+        justify-content: flex-start;
+        grid-column: 2;
+        align-items: center;
+        display: flex;
+
+    }
+
+    &-nav {
+
+        justify-content: flex-end;
+        grid-column: 3;
+        align-items: center;
+        display: flex;
+        gap: clamp(16px, 1vw, 32px);
+
+    }
+
+}
