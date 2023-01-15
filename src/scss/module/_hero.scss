@@ -1,35 +1,72 @@
 .hero {
 
-    background-image: url(/public/assets/webp/hero_d_resp.webp);
+    background-image: url(/public/assets/webp/hero_resp.webp);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba($dkr-primary, 0.8);
 
-    &-information {
+    &-info {
 
         &-heading {
 
-            @include headingStyles();
+            text-transform: uppercase;
+            font-family: $tpg-montserrat;
+            font-weight: 700;
+            font-size: 3vw;
+            color: $ltr-primary;
 
         }
 
         &-subheading {
 
-            @include bodyStyles($tpg-body, $tpg-openSans);
-            color: $tpg-secondary;
+            font-family: $tpg-montserrat;
+            font-weight: 400;
+            font-size: 1vw;
+            color: $ltr-primary;
 
         }
 
         &-cta {
 
-            margin-top: 16px;
-            @include btnStyles();
+            & > button {
 
-            &:hover {
+                border-radius: 100px;
+                font-family: $tpg-lato;
+                font-weight: 400;
+                transition: 0.2s ease;
+                font-size: 0.8vw;
+                padding: 12px 24px;
 
-                background-color: $tpg-primary;
-                cursor: pointer;
-                color: $msc-accent;
+            }
+
+            &-explore {
+
+                background-color: $msc-accent;
+                border: 0;
+                color: $ltr-primary;
+
+                &:hover {
+
+                    background-color: #a61033;
+                    cursor: pointer;
+
+                }
+
+            }
+
+            &-contributors {
+
+                border: 1px solid $ltr-primary;
+                color:  $ltr-primary;
+
+                &:hover {
+
+                    background-color: $ltr-primary;
+                    cursor: pointer;
+                    color: $dkr-primary;
+
+                }
 
             }
 
@@ -39,10 +76,11 @@
 
     &-footer {
 
-        i {
+        & > a {
 
             transition: 0.2s ease;
-            font-size: clamp(24px, 1vw, 40px);
+            font-size: 16px;
+            color: $ltr-primary;
 
             &:hover {
 

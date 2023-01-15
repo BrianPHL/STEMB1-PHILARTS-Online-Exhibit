@@ -5,14 +5,15 @@
     grid-row: 1;
     position: sticky;
     display: grid;
-    height: clamp(72px, 3vw, 108px);
+    height: 64px;
     top: 0;
 
-    &-logo {
+    &-heading {
 
         justify-content: flex-start;
-        grid-column: 2;
         align-items: center;
+        grid-column: 2;
+        grid-row: 1;
         display: flex;
 
     }
@@ -20,10 +21,11 @@
     &-nav {
 
         justify-content: flex-end;
-        grid-column: 3;
         align-items: center;
+        grid-column: 3;
+        grid-row: 1;
         display: flex;
-        gap: clamp(16px, 1vw, 32px);
+        gap: 16px;
 
     }
 

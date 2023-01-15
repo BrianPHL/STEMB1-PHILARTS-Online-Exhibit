@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 @import url("/public/assets/icons/all.min.css");
 * {
   background-color: transparent;
@@ -30,17 +29,18 @@ body {
   grid-row: 1;
   position: sticky;
   display: grid;
-  height: clamp(72px, 3vw, 108px);
+  height: 64px;
   top: 0;
 }
-.header-logo {
+.header-heading {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  grid-column: 2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-column: 2;
+  grid-row: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,94 +49,121 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  grid-column: 3;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-column: 3;
+  grid-row: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: clamp(16px, 1vw, 32px);
+  gap: 16px;
 }
 
 .hero {
-  background-color: green;
   grid-template-columns: 12vw 1fr 12vw;
   grid-column: 1/4;
   grid-row: 1;
   display: grid;
 }
-.hero-information {
-  grid-column: 2;
-  align-self: center;
+.hero-info {
+  grid-column: 2/3;
   grid-row: 1;
+  align-self: center;
+}
+.hero-info-cta {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
 }
 .hero-footer {
-  grid-column: 2;
   place-items: center;
+  grid-column: 2/3;
   align-self: flex-end;
   grid-row: 1;
   display: grid;
-  height: 72px;
+  height: 40px;
+  width: 100%;
 }
 
-.header-logo {
-  font-weight: 700;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: clamp(16px, 1.5vw, 64px);
+.header {
+  background-color: #FFF;
+}
+.header-heading {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #202020;
 }
 .header-nav > a {
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(16px, 1vw, 32px);
-  color: #202020;
+  font-family: "Lato", sans-serif;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  font-size: 16px;
+  color: #727272;
 }
 .header-nav > a:hover {
-  color: #E9204F;
+  color: #202020;
 }
 
 .hero {
-  background-image: url(/public/assets/webp/hero_d_resp.webp);
+  background-image: url(/public/assets/webp/hero_resp.webp);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(32, 32, 32, 0.8);
+          box-shadow: inset 0 0 0 2000px rgba(32, 32, 32, 0.8);
 }
-.hero-information-heading {
+.hero-info-heading {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(28px, 3.5vw, 86px);
+  font-size: 3vw;
+  color: #E9E9E9;
 }
-.hero-information-subheading {
+.hero-info-subheading {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(20px, 2vw, 72px);
-  color: #494949;
+  font-size: 1vw;
+  color: #E9E9E9;
 }
-.hero-information-cta {
-  margin-top: 16px;
+.hero-info-cta > button {
   border-radius: 100px;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  font-size: clamp(12px, 1vw, 16px);
-  outline: none;
-  padding: clamp(8px, 1vw, 16px) clamp(16px, 2vw, 32px);
-  border: 1px solid #202020;
+  font-size: 0.8vw;
+  padding: 12px 24px;
 }
-.hero-information-cta:hover {
-  background-color: #202020;
+.hero-info-cta-explore {
+  background-color: #E9204F;
+  border: 0;
+  color: #E9E9E9;
+}
+.hero-info-cta-explore:hover {
+  background-color: #a61033;
   cursor: pointer;
-  color: #E9204F;
 }
-.hero-footer i {
+.hero-info-cta-contributors {
+  border: 1px solid #E9E9E9;
+  color: #E9E9E9;
+}
+.hero-info-cta-contributors:hover {
+  background-color: #E9E9E9;
+  cursor: pointer;
+  color: #202020;
+}
+.hero-footer > a {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  font-size: clamp(24px, 1vw, 40px);
+  font-size: 16px;
+  color: #E9E9E9;
 }
-.hero-footer i:hover {
+.hero-footer > a:hover {
   cursor: pointer;
   color: #E9204F;
 }

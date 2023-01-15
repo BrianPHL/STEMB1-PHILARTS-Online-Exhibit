@@ -1,27 +1,35 @@
 .hero {
 
-    background-color: green;
     grid-template-columns: 12vw 1fr 12vw;
     grid-column: 1/4;
     grid-row: 1;
     display: grid;
 
-    &-information {
+    &-info {
 
-        grid-column: 2;
-        align-self: center;
+        grid-column: 2/3;
         grid-row: 1;
+        align-self: center;
+
+        &-cta {
+
+            margin-top: 16px;
+            display: flex;
+            gap: 8px;
+
+        }
 
     }
 
     &-footer {
 
-        grid-column: 2;
         place-items: center;
+        grid-column: 2/3;
         align-self: flex-end;
         grid-row: 1;
         display: grid;
-        height: 72px;
+        height: 40px;
+        width: 100%;
 
     }
 

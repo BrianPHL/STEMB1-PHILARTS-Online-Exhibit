@@ -1,24 +1,29 @@
 .header {
 
-    &-logo {
+    background-color: #FFF;
 
-        @include headingStyles(
-            clamp(16px, 1.5vw, 64px),
-            $tpg-sourceSansPro
-        );
+    &-heading {
+
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-family: $tpg-montserrat;
+        font-size: 20px;
+        color: $dkr-primary;
 
     }
 
     &-nav {
-
+        
         & > a {
 
-            @include anchorStyles();
+            font-family: $tpg-lato;
             transition: 0.2s ease;
+            font-size: 16px;
+            color: $dkr-tertiary;
 
             &:hover {
 
-                color: $msc-accent;
+                color: $dkr-primary;
 
             }
 
