@@ -1,0 +1,44 @@
+.exhibit {
+
+    &-heading {
+
+        font-family: $tpg-montserrat;
+        font-size: 3vw;
+        color: $dkr-primary;
+
+    }
+
+    & > section {
+        
+        // .exhibit-*-heading
+        & > h3 {
+
+            font-family: $tpg-montserrat;
+            font-weight: 700;
+            font-size: 1vw;
+            color: $dkr-primary;
+
+        }
+
+        // .exhibit-*-img
+        & > div > div {
+
+            place-items: center;
+            display: grid;
+            height: auto;
+            width: auto;
+
+            & > img {
+
+                object-fit: cover;
+                height: 300px;
+                width: 100%;
+
+    
+            }
+
+        }
+
+    }
+
+}

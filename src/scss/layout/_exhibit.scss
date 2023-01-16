@@ -1,15 +1,33 @@
 .exhibit {
 
     grid-template-columns: 100%;
-    grid-template-rows: 500px;
+    grid-template-rows: auto repeat(7, auto);
     grid-column: 2/3;
     grid-row: 3;
     display: grid;
+    padding: 24px 0px 24px 0px;
     height: auto;
+
+    &-heading {
+
+        margin-bottom: 24px;
+        grid-row: 1;
+
+    }
 
     &-photography {
 
-        grid-row: 1;
+        grid-row: 2;
+        
+        &-container {
+  
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            display: grid;
+            padding: 24px 0px 24px 0px;
+            gap: 8px;
+
+        }
 
     }
 
