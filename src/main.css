@@ -156,11 +156,71 @@ body {
   margin-bottom: 24px;
   grid-row: 1;
 }
-.exhibit-photography {
+.exhibit-videography {
   grid-row: 2;
 }
+.exhibit-videography-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-photography {
+  grid-row: 3;
+}
 .exhibit-photography-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-digitalArts {
+  grid-row: 4;
+}
+.exhibit-digitalArts-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-sketching {
+  grid-row: 5;
+}
+.exhibit-sketching-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-painting {
+  grid-row: 6;
+}
+.exhibit-painting-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-painting {
+  grid-row: 7;
+}
+.exhibit-painting-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  display: grid;
+  padding: 24px 0px 24px 0px;
+  gap: 8px;
+}
+.exhibit-collage {
+  grid-row: 8;
+}
+.exhibit-collage-container {
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   display: grid;
   padding: 24px 0px 24px 0px;
@@ -390,16 +450,40 @@ body {
   color: #202020;
 }
 .exhibit > section > div > div {
-  place-items: center;
+  background-color: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
   display: grid;
+  padding: 8px 8px 8px 8px;
   height: auto;
+  border: 1px solid rgba(32, 32, 32, 0.2);
   width: auto;
+  gap: 4px;
 }
 .exhibit > section > div > div > img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
   width: 100%;
+}
+.exhibit > section > div > div > video {
+  height: 300px;
+  width: 100%;
+}
+.exhibit > section > div > div > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: 0.8vw;
+  color: #494949;
+}
+.exhibit > section > div > div:hover {
+  background-color: #202020;
+  cursor: pointer;
+}
+.exhibit > section > div > div:hover > p {
+  color: #E9E9E9;
 }
 
 .footer-text-heading {

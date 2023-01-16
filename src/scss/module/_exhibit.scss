@@ -23,10 +23,14 @@
         // .exhibit-*-img
         & > div > div {
 
-            place-items: center;
+            background-color: white;
+            transition: 0.2s ease;
             display: grid;
+            padding: 8px 8px 8px 8px;
             height: auto;
+            border: 1px solid rgba($dkr-primary, 0.2);
             width: auto;
+            gap: 4px;
 
             & > img {
 
@@ -35,6 +39,36 @@
                 width: 100%;
 
     
+            }
+
+            & > video {
+
+                height: 300px;
+                width: 100%;
+
+            }
+
+            & > p {
+
+                font-family: $tpg-lato;
+                font-weight: 400;
+                transition: 0.2s ease;
+                font-size: 0.8vw;
+                color: $dkr-secondary;
+
+            }
+
+            &:hover {
+
+                background-color: $dkr-primary;
+                cursor: pointer;
+
+                & > p {
+
+                    color: $ltr-primary;
+
+                }
+
             }
 
         }
