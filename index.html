@@ -22,7 +22,7 @@
 
                 <a href="#NAV_HERO">Home</a>
                 <a href="#NAV_ABOUT">About</a>
-                <a href="#NAV_EXHIBIT">Exhibit <i class="fa-solid fa-angle-down" style="margin-left: 8px;"></i></a>
+                <a href="#NAV_EXHIBIT">Exhibit</a>
 
              </nav>
 
@@ -37,13 +37,13 @@
 
                 <div class="hero-info-cta">
 
-                    <button class="hero-info-cta-explore">Explore</button>
-                    <button class="hero-info-cta-contributors">Meet the contributors</button>
+                    <button class="hero-info-cta-explore" onclick="location.href='#NAV_EXHIBIT'">Explore</button>
+                    <button class="hero-info-cta-contributors" onclick="location.href='#NAV_ABOUT_CONTRIBUTORS'">Meet the contributors</button>
     
                 </div>
 
             </div>
-
+            <!-- onclick="location.href='https://google.com';" -->
             <div class="hero-footer">
 
                 <a href="#NAV_EXHIBIT" class="fa-solid fa-angle-down"></a>
@@ -56,7 +56,7 @@
 
             <h2 class="about-heading">About the exhibit</h2>
 
-            <section class="about-desc">
+            <section class="about-desc" id="NAV_ABOUT_DESC">
 
                 <h3 class="about-desc-heading">Who we really are</h3>
                 <p class="about-desc-body">
@@ -66,7 +66,7 @@
 
             </section>
 
-            <section class="about-contributors">
+            <section class="about-contributors" id="NAV_ABOUT_CONTRIBUTORS">
 
                 <h3 class="about-contributors-heading">Meet the contributors</h3>
 
@@ -90,6 +90,7 @@
                             <h4>Natasha Dacillo</h4>
                             <h4>Nielchelle Molina</h4>
                             <h4>Peter John</h4>
+                            <h4>Raven Ebanez</h4>
                             <h4>Raven Marco</h4>
 
                         </div>
@@ -194,7 +195,7 @@
 
             <h2 class="exhibit-heading">Exhibit gallery</h2>
 
-            <section class="exhibit-videography">
+            <section class="exhibit-videography" id="NAV_EXHIBIT_VIDEOGRAPHY">
 
                 <h3 class="exhibit-videography-heading">Videography</h3>
 
@@ -239,7 +240,7 @@
 
             </section>
 
-            <section class="exhibit-photography">
+            <section class="exhibit-photography" id="NAV_EXHIBIT_PHOTOGRAPHY">
 
                 <h3 class="exhibit-photography-heading">Photography</h3>
 
@@ -382,7 +383,7 @@
 
             </section>
 
-            <section class="exhibit-digitalArts">
+            <section class="exhibit-digitalArts" id="NAV_EXHIBIT_DIGITALARTS">
 
                 <h3 class="exhibit-digitalArts-heading">Digital Arts</h3>
 
@@ -399,7 +400,7 @@
 
             </section>
 
-            <section class="exhibit-sketching">
+            <section class="exhibit-sketching" id="NAV_EXHIBIT_SKETCHING">
 
                 <h3 class="exhibit-sketching-heading">Sketching</h3>
 
@@ -445,13 +446,13 @@
 
             </section>
 
-            <section class="exhibit-painting">
+            <section class="exhibit-painting" id="NAV_EXHIBIT_PAINTING">
 
                 <h3 class="exhibit-painting-heading">Painting</h3>
 
             </section>
 
-            <section class="exhibit-collage">
+            <section class="exhibit-collage" id="NAV_EXHIBIT_COLLAGE">
 
                 <h3 class="exhibit-collage-heading">Collage</h3>
 
@@ -483,27 +484,27 @@
 
                 <div class="footer-nav-home">
 
-                    <a>Home</a>
+                    <a href="#NAV_HERO">Home</a>
 
                 </div>
 
                 <div class="footer-nav-about">
 
-                    <a>About Us</a>
-                    <a>About the exhibit</a>
-                    <a>Meet the contributors</a>
+                    <a href="#NAV_ABOUT">About Us</a>
+                    <a href="#NAV_ABOUT_DESC">About the exhibit</a>
+                    <a href="#NAV_ABOUT_CONTRIBUTORS">Meet the contributors</a>
 
                 </div>
 
                 <div class="footer-nav-exhibit">
 
-                    <a>Exhibit</a>
-                    <a>Photography</a>
-                    <a>Videography</a>
-                    <a>Digital Arts</a>
-                    <a>Painting</a>
-                    <a>Sketching</a>
-                    <a>Collage</a>
+                    <a href="#NAV_EXHIBIT">Exhibit</a>
+                    <a href="#NAV_EXHIBIT_VIDEOGRAPHY">Videography</a>
+                    <a href="#NAV_EXHIBIT_PHOTOGRAPHY">Photography</a>
+                    <a href="#NAV_EXHIBIT_DIGITALARTS">Digital Arts</a>
+                    <a href="#NAV_EXHIBIT_PAINTING">Painting</a>
+                    <a href="#NAV_EXHIBIT_SKETCHING">Sketching</a>
+                    <a href="#NAV_EXHIBIT_COLLAGE">Collage</a>
 
                 </div>
 
