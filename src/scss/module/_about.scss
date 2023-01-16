@@ -1,0 +1,69 @@
+.about {
+
+    &-heading {
+
+        font-family: $tpg-montserrat;
+        font-size: 3vw;
+        color: $dkr-primary;
+
+    }
+
+    &-desc {
+
+        &-heading {
+
+            font-family: $tpg-montserrat;
+            font-weight: 700;
+            font-size: 1vw;
+            color: $dkr-primary;
+
+        }
+
+        &-body {
+
+            font-family: $tpg-lato;
+            font-weight: 400;
+            text-align: justify;
+            font-size: 0.8vw;
+            color: $dkr-secondary;
+
+        }
+        
+    }
+
+    &-contributors {
+
+        &-heading {
+
+            font-family: $tpg-montserrat;
+            font-weight: 700;
+            font-size: 1vw;
+            color: $dkr-primary;
+
+        }
+
+        &-container {
+
+            & > div > h3 {
+
+                font-family: $tpg-montserrat;
+                font-weight: 400;
+                font-size: 1vw;
+                color: $dkr-primary;
+
+            }
+
+            & > div > div > h4 {
+
+                font-family: $tpg-lato;
+                font-weight: 400;
+                font-size: 0.8vw;
+                color: $dkr-secondary;
+
+            }
+
+        }
+
+    }
+
+}

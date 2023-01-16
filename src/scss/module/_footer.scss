@@ -1,0 +1,38 @@
+.footer {
+
+    &-text {
+
+        &-heading {
+
+            font-family: $tpg-montserrat;
+            font-weight: 700;
+            font-size: 2vw;
+            color: $dkr-primary;
+
+        }
+
+        &-subheading {
+
+            font-family: $tpg-montserrat;
+            font-weight: 400;
+            font-size: 1vw;
+            color: $dkr-primary;
+
+        }
+
+    }
+
+    &-copyright {
+
+        & > h5 {
+
+            font-family: $tpg-montserrat;
+            font-weight: 400;
+            font-size: 0.6vw;
+            color: $dkr-secondary;
+
+        }
+
+    }
+
+}

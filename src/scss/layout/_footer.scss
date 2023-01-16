@@ -1,0 +1,96 @@
+.footer {
+
+    grid-template-columns: 12vw 1fr 1fr 12vw;
+    grid-template-rows: 100% 20px;
+    background-color: white;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    grid-column: 1/4;
+    grid-row: 4;
+    display: grid;
+
+    &-text {
+
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+
+    }
+
+    &-nav {
+
+        justify-content: flex-end;
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        gap: 64px;
+
+        & > div {
+
+            flex-direction: column;
+            display: flex;
+            gap: 8px;
+
+            & > a:first-child {
+
+                font-family: $tpg-montserrat;
+                color: $dkr-primary;
+
+                &:hover {
+
+                    cursor: pointer;
+
+                }
+
+            }
+
+            & > a {
+
+                font-family: $tpg-lato;
+                font-weight: 400;
+                transition: 0.2s ease;
+                font-size: 0.8vw;
+                color: $dkr-tertiary;
+
+                &:hover {
+
+                    cursor: pointer;
+                    color: $dkr-primary;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &-copyright {
+
+        grid-column: 2/4;
+        grid-row: 2;
+        display: flex;
+        width: 100%;
+
+        &-left {
+
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;
+            width: 100%;
+
+        }
+
+        &-right {
+
+            justify-content: flex-end;
+            align-items: center;
+            display: flex;
+            width: 100%;
+
+        }
+
+    }
+
+}

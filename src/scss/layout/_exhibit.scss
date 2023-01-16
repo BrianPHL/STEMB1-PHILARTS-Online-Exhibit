@@ -1,0 +1,16 @@
+.exhibit {
+
+    grid-template-columns: 100%;
+    grid-template-rows: 500px;
+    grid-column: 2/3;
+    grid-row: 3;
+    display: grid;
+    height: auto;
+
+    &-photography {
+
+        grid-row: 1;
+
+    }
+
+}

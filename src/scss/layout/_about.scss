@@ -1,0 +1,45 @@
+.about {
+
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 2;
+    margin: 24px 0px 24px 0px;
+    display: flex;
+
+    &-desc {
+
+        flex-direction: column;
+        display: flex;
+        gap: 8px;
+
+    }
+
+    &-contributors {
+
+        margin-top: 24px;
+        flex-direction: column;
+        display: flex;
+        gap: 8px;
+
+        &-container {
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            display: grid;
+            width: 100%;
+            gap: 16px;
+
+            & > div {
+
+                flex-direction: column;
+                display: flex;
+                height: auto;
+                gap: 16px;  
+
+            }
+
+        }
+
+    }
+
+}
