@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
-@import url("/public/assets/icons/all.min.css");
+
 * {
   background-color: transparent;
   text-decoration: none;
@@ -160,7 +160,7 @@ body {
   grid-row: 2;
 }
 .exhibit-videography-container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   display: grid;
   padding: 24px 0px 24px 0px;
@@ -343,7 +343,7 @@ body {
 }
 
 .hero {
-  background-image: url(/public/assets/webp/hero_resp.webp);
+  /* background-image: url('/public/assets/webp/hero_resp.webp'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
